@@ -1,7 +1,7 @@
 # leetcode-solutions
 
 ## Purpose
-Here you can find some of my solutions to popular Leetcode problems
+Here you can find some of my solutions to popular Leetcode problems. I'll be solving the problems myself first, and then I'll solve it again after looking at the best solutions.
 
 ## Resources
 I've used the following resources while practicing leetcode:
@@ -14,6 +14,6 @@ I've used the following resources while practicing leetcode:
 ## Tips
 1. Try to practice a good variety of Leetcode questions (ex. Arrays, Strings, Linked Lists, Stacks & Queues, Hash Tables, Graphs, Dynamic Programming)
 2. Understand the patterns! This is the key to being able to solve coding problems on interviews.
-3. If you have time, I suggest trying out a problem yourself first. Give it your best shot. Only once you've solved it or you've given it enough thought should you check the solutions.
+3. If you have time, I suggest trying out a problem yourself first. Give it your best shot. Only once you've solved it or given it enough thought, should you check the solutions.
 4. Really try to understand the solutions! Interviewers won't be impressed with brute force approaches to problems. They want to see solutions that are optimized and elegant. 
-5. Think about time & space complexity. If your solution is O(n<sup>2</sup>), can you bring it down to O(n) or O(n*log(n))?
+5. Think about time & space complexity. If your solution is O(n<sup>2</sup>), can you bring it down to O(n) or O(n*log(n)), etc?
