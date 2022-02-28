@@ -1,7 +1,7 @@
 # leetcode-solutions
 
 ## Purpose
-Here you can find some of my solutions to popular Leetcode problems. I'll be solving the problems myself first, and then I'll solve it again after looking at the best solutions.
+Here you can find some of my solutions to popular Leetcode problems. The way I approach Leetcode problems is by first solving the problem myself, and then solving it again after looking at the best solutions.
 
 ## Resources
 I've used the following resources while practicing leetcode:
