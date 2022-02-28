@@ -6,7 +6,8 @@ Here you can find some of my solutions to popular Leetcode problems. The way I a
 ## Resources
 I've used the following resources while practicing leetcode:
  - [The Famous Blind 75 Leetcode Problems](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
- - [YouTube Playlist with Blind 75 Solutions](https://www.youtube.com/playlist?list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf)
+ - [YouTube Playlist with Blind 75 Solutions by NeetCode](https://www.youtube.com/playlist?list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf)
+ - [Notes on Blind 75 Questions by NeetCode](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
  - [Presentation on How to Prepare for Technical Interviews](https://docs.google.com/presentation/d/10Y2NBqbz-11Dnwfbaf0iwD9NzyfgePFgcc_FOPAnbqY/edit#slide=id.g35f391192_00)
  - [14 Patterns to Ace Any Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
  - [Leetcode Patterns](https://seanprashad.com/leetcode-patterns/)
