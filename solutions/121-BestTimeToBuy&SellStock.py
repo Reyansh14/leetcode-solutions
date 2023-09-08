@@ -1,4 +1,10 @@
-# Notes: example of Sliding Window algorithm - keeps track of left and right pointers. iterate through prices array, keep track of left pointer called currMin. if currProfit > maxProfit, set maxProfit = currProfit. if the right pointer (prices[i]) < left pointer (currMin), set currMin to the right pointer and keep going. at the end, return maxProfit
+# Notes: 
+# example of Sliding Window algorithm - keeps track of left and right pointers. 
+# iterate through prices array, keep track of left pointer called currMin. 
+# if currProfit > maxProfit, set maxProfit = currProfit. 
+# if the right pointer (prices[i]) < left pointer (currMin), set currMin to the right pointer and keep going. 
+# at the end, return maxProfit
+
 # Space Complexity: O(n)
 # Time  Complexity: O(n)
 

@@ -1,4 +1,7 @@
-# Notes: Printed out the elements of a matrix in spiral order by keeping track of a top, bottom, left, and right pointer and adjusting them as each row/column is read.
+# Notes: 
+# Printed out the elements of a matrix in spiral order by keeping track of a top, bottom, left, and right pointer 
+# and adjusting them as each row/column is read.
+
 # Time  Complexity: O(n * m)
 # Space Complexity: O(1) (not counting output array)
 class Solution:

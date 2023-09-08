@@ -1,4 +1,5 @@
 # Notes: Use 2 pointers and scan the string after converting it to only have alphanumeric characters in it
+
 # Space Complexity: O(n)
 # Time  Complexity: O(n)
 class Solution:
@@ -20,7 +21,10 @@ class Solution:
         return True
 
 
-# Notes: More space efficient solution -> Use 2 pointers again, use ord to see if it's alphanumeric; while left/right pointer isn't alphanumeric, keep incrementing/decrementing as required
+# Notes: 
+# More space efficient solution -> Use 2 pointers again, use ord to see if it's alphanumeric; 
+# while left/right pointer isn't alphanumeric, keep incrementing/decrementing as required
+
 # Space Complexity: O(1)
 # Time  Complexity: O(n)
 class Solution:

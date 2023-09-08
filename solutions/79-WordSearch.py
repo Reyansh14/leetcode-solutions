@@ -1,4 +1,7 @@
-# Notes: Keep track of visited tiles in the path set. In the dfs function, return true if charIdx reaches len of word; return false if out of bounds, or if char doesn't match current tile, or if tile is in path.
+# Notes: 
+# Keep track of visited tiles in the path set. In the dfs function, return true if charIdx reaches len of word; 
+# return false if out of bounds, or if char doesn't match current tile, or if tile is in path.
+
 # Time  Complexity: O(n * m * 4^(word.length))
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:

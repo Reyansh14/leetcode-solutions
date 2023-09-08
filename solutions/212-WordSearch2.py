@@ -1,5 +1,8 @@
 # Efficient Solution:
-# Notes: Use a trie data structure to store the given words and use back tracking on each tile of the board to see if the given words exist in the board
+# Notes: 
+# Use a trie data structure to store the given words and use back tracking on each tile of the board to see 
+# if the given words exist in the board
+
 # Time  Complexity: O(rows*cols*4^(words.length))
 class TrieNode:
     def __init__(self):

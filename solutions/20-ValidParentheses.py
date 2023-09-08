@@ -1,4 +1,9 @@
-# Notes: Create a stack and a dict with opening and closing brackets, iterate through the chars in the string s. if opening bracket -> append to stack, if closing bracket and matches the top value in stack -> pop from stack, else if it doesn't match return false. After iterating, if stack is empty, return true, else return false.
+# Notes: 
+# Create a stack and a dict with opening and closing brackets, iterate through the chars in the string s. 
+# If opening bracket -> append to stack; if closing bracket and matches the top value in stack -> pop from stack;
+# else, if it doesn't match, return false. 
+# After iterating, if stack is empty, return true, else return false.
+
 # Space Complexity: O(n)
 # Time  Complexity: O(n)
 class Solution:

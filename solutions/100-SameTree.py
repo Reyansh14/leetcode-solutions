@@ -5,7 +5,11 @@
 #         self.left = left
 #         self.right = right
 
-# Notes: Recursive Depth-First Search (DFS) Solution, base cases -> if both nodes are null return true, if both are non-null and same value, return true, else return false. recursively call on left and right subtrees for both p and q.
+# Notes: 
+# Recursive Depth-First Search (DFS) Solution, base cases -> if both nodes are null return true;
+# if both are non-null and same value, return true, else return false. 
+# recursively call on left and right subtrees for both p and q.
+
 # Space Complexity: O(p + q)
 # Time  Complexity: O(n)
 class Solution:

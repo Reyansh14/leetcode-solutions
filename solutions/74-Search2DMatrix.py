@@ -1,4 +1,7 @@
-# Notes: Iterate through outer array to find an array that potentially has the target; if the target is in this targetArray, return True, else return False
+# Notes: 
+# Iterate through outer array to find an array that potentially has the target; 
+# if the target is in this targetArray, return True, else return False
+
 # Space Complexity: O(n)
 # Time  Complexity: O(n)
 class Solution:
@@ -14,7 +17,10 @@ class Solution:
         return True if target in targetArr else False
 
 
-# Notes: Use binary search to find the correct row, and binary search on that correct row to see if the target exists within that subarray.
+# Notes: 
+# Use binary search to find the correct row, and binary search on that correct row,
+# to see if the target exists within that subarray.
+
 # Space Complexity: O(log n)
 # Time  Complexity: O(log n)
 class Solution:

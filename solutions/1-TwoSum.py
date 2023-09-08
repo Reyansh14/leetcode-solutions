@@ -1,4 +1,8 @@
-# Notes: iterate through nums array, use hash map to check if it contains the difference value (target - value at current index). If it contains the difference value, return array of index of that difference value and current index. Else, map will add that value and index pair to the dictionary (val : index)
+# Notes: 
+# Iterate through nums array, use hash map to check if it contains the difference value (target - value at current index). 
+# If it contains the difference value, return array of index of that difference value and current index. 
+# Else, map will add that value and index pair to the dictionary (val : index)
+
 # Space Complexity: O(n)
 # Time  Complexity: O(n)
 
