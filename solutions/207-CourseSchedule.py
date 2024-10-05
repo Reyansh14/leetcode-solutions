@@ -2,13 +2,13 @@ from collections import deque, defaultdict
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        ### Approach 1 - DFS
+        ### Approach 1 - DFS (check for cycles)
         # Time Complexity:
         # 𝑂(𝑉 + 𝐸), where 𝑉 is the number of courses and 𝐸 is the number of prerequisite pairs.
         # Space Complexity:
         # 𝑂(𝑉) due to the recursion stack and the visitSet.
 
-        # # map each course to prereq list
+        # # map each course to prereq list (key:course, val:[prereqs])
         # prereqMap = { i:[] for i in range(numCourses) }
         # for course, prereq in prerequisites:
         #     prereqMap[course].append(prereq)
