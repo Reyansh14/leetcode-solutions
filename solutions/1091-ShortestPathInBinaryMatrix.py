@@ -1,3 +1,16 @@
+from collections import deque
+from typing import List
+
+"""
+Time Complexity: O(N*M) where N and M are the dimensions of the grid
+- In worst case, we might need to visit all cells in the grid
+- Each cell is visited at most once since we mark visited cells
+
+Space Complexity: O(N*M)
+- Queue can contain at most N*M cells in worst case
+- No additional visited set needed since we modify input grid
+"""
+
 class Solution:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         n, m = len(grid), len(grid[0])
@@ -25,3 +38,15 @@ class Solution:
 
         return -1
 
+# Test cases
+if __name__ == "__main__":
+    solution = Solution()
+    
+    # Test Case 1: Simple path exists
+    test1 = [[0,1,0],[0,0,0],[0,0,0]]
+    print("Test 1:", solution.shortestPathBinaryMatrix(test1))  # Expected: 3
+    
+    # Test Case 2: No path exists
+    test2 = [[1,0,0],[0,0,0],[0,0,0]]
+    print("Test 2:", solution.shortestPathBinaryMatrix(test2))  # Expected: -1
+    
