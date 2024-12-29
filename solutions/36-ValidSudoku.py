@@ -1,47 +1,40 @@
-from typing import List
+'''
+Notes:
+For boxes, the formula is box_idx = (i // 3) * 3 + (j // 3).
+Dividing the row index i by 3 gives the "row group" the cell belongs to:
+- Rows 0, 1, 2 → group 0.
+- Rows 3, 4, 5 → group 1.
+- Rows 6, 7, 8 → group 2.
+Each row group contains 3 sub-boxes horizontally, so we multiply the row 
+group index by 3 to shift to the correct sub-box row section. 
+Dividing the column index j by 3 gives the position within the current row 
+group, like an offset. Then, we just add the two together to get the mapping.
+
+Time Complexity: O(81) = O(1) or O(n^2) if it was an n x n board
+Space Complexity: O(81) = O(1) or O(n) if it was an n x n board
+'''
 
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        """        
-        Time Complexity: O(1) - iterate through a 9x9 board once, so it's constant
-        Space Complexity: O(1) - using 3 lists of 9 sets each, which is constant space
-        
-        Args:
-            board: 9x9 list of lists representing the Sudoku board.
-                  Empty cells are represented by '.' and filled cells contain '1' to '9'
-        
-        Returns:
-            bool: True if the board is valid, False otherwise
-        """
-        # Initialize sets to keep track of numbers in rows, columns and boxes
         rows = [set() for _ in range(9)]
         cols = [set() for _ in range(9)]
         boxes = [set() for _ in range(9)]
-        
-        # Iterate through each cell in the board
-        for i in range(9):
-            for j in range(9):
-                # Skip empty cells
-                if board[i][j] == '.':
+
+        for i in range(len(board)):
+            for j in range(len(board)):
+                cell = board[i][j]
+                if cell == ".":
                     continue
-                    
-                # Calculate box index (0-8)
-                box_idx = (i // 3) * 3 + j // 3
-                
-                # Get current number
-                num = board[i][j]
-                
-                # Check if number already exists in current row, column or box
-                if (num in rows[i] or 
-                    num in cols[j] or 
-                    num in boxes[box_idx]):
+
+                box_idx = (i // 3) * 3 + (j // 3)
+
+                if cell in rows[i] or cell in cols[j] or cell in boxes[box_idx]:
                     return False
-                
-                # Add number to respective sets
-                rows[i].add(num)
-                cols[j].add(num)
-                boxes[box_idx].add(num)
-        
+
+                rows[i].add(cell)
+                cols[j].add(cell)
+                boxes[box_idx].add(cell)
+
         return True
 
 
